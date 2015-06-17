@@ -1,5 +1,7 @@
-require "hello_rails/version"
+require_relative 'version'
 
 module HelloRails
-  # Your code goes here...
+  class Runner
+
+  end
 end
