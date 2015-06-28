@@ -1,0 +1,20 @@
+[
+  {
+    "name": "0.0.2",
+    "zipball_url": "https://api.github.com/repos/freddyrangel/hellosign-rails-starter-app/zipball/0.0.2",
+    "tarball_url": "https://api.github.com/repos/freddyrangel/hellosign-rails-starter-app/tarball/0.0.2",
+    "commit": {
+      "sha": "92e43c43348294f27f1a16cf9a452fc34d6794d6",
+      "url": "https://api.github.com/repos/freddyrangel/hellosign-rails-starter-app/commits/92e43c43348294f27f1a16cf9a452fc34d6794d6"
+    }
+  },
+  {
+    "name": "0.0.1",
+    "zipball_url": "https://api.github.com/repos/freddyrangel/hellosign-rails-starter-app/zipball/0.0.1",
+    "tarball_url": "https://api.github.com/repos/freddyrangel/hellosign-rails-starter-app/tarball/0.0.1",
+    "commit": {
+      "sha": "d178cb2e2939b7f5f13db42a2a5de3ad96721904",
+      "url": "https://api.github.com/repos/freddyrangel/hellosign-rails-starter-app/commits/d178cb2e2939b7f5f13db42a2a5de3ad96721904"
+    }
+  }
+]

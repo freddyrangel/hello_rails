@@ -3,10 +3,11 @@ module HelloRails
     include UnixUtils
 
     attr_accessor :app_data, :prototype, :latest_tag, :tarball_url,
-      :cached_prototypes_dir
+      :cached_prototypes_dir, :messenger
 
     def fetch_latest(app_data)
       @app_data = app_data
+      @messenger = Messenger.new(app_data: app_data, ruby_version: RUBY_VERSION)
       check_latest_version_on_github
       cache_latest_version
     end

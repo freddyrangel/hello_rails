@@ -4,7 +4,7 @@ module HelloRails
 
     def initialize(opts = {})
       @app_data     = opts[:app_data]
-      @ruby_version = opts[:ruby_version]
+      @ruby_version = opts[:ruby_version] || RUBY_VERSION
     end
 
     def welcome
@@ -35,7 +35,7 @@ module HelloRails
       puts  ""
       print "We could not find any tags in the repo (".colorize(:light_red)
       print "#{app_data.repo}".colorize(:white)
-      print ") on github.".colorize(:light_red)
+      print ") on GitHub.".colorize(:light_red)
       puts  ""
       print "HelloRails uses the 'largest' tag in a repository, where tags are sorted alphanumerically.".colorize(:light_red)
       puts  ""
@@ -50,11 +50,11 @@ module HelloRails
       puts  ""
       print "We could not find (".colorize(:light_red)
       print "#{app_data.repo}".colorize(:white)
-      print ") on github.".colorize(:light_red)
+      print ") on GitHub.".colorize(:light_red)
       puts  ""
-      print "The response from github was a (".colorize(:light_red)
+      print "The response from GitHub was a (".colorize(:light_red)
       print "#{opts[:status_code]}".colorize(:white)
-      puts  ") which I'm sure you can fix right up!".colorize(:light_red)
+      puts  ")".colorize(:light_red)
       puts  ""
     end
 

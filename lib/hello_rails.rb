@@ -23,6 +23,10 @@ module HelloRails
     runner.run
   end
 
+  def self.gem_root
+    File.expand_path('../../', __FILE__) + '/'
+  end
+
   private
 
   def self.runner

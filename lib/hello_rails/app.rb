@@ -3,19 +3,18 @@ module HelloRails
     extend Forwardable
     include UnixUtils
 
-    attr_reader :current_ruby_version, :messenger, :app_data, :app_installer
+    attr_reader :messenger, :app_data, :app_installer
 
     def_delegators :app_data, :name, :repo, :directory, :formatted_name,
       :dash_name, :snake_name, :camel_name, :title_name
 
     def initialize
-      @current_ruby_version = RUBY_VERSION
       @app_installer        = AppInstaller.new
     end
 
     def create!(opts = {})
       @app_data  = AppData.new(opts)
-      @messenger = Messenger.new(app_data: app_data, ruby_version: current_ruby_version)
+      @messenger = Messenger.new(app_data: app_data)
       welcome_message if app_directory_empty?
       app_installer.run(app_data)
       configure_app
